@@ -1,4 +1,5 @@
 #include "monty.h"
+
 /**
  * f_pall - pall
  * @head: head
@@ -12,12 +13,11 @@ void f_pall(stack_t **head, unsigned int counter)
 	nw = *head;
 	if (nw == NULL)
 		return;
-	else
+
+	while (nw != NULL)
 	{
-		while (nw != NULL)
-		{
-			printf("%d\n", nw->n);
-			nw = nw->next;
-		}
+		printf("%d\n", nw->n);
+		nw = nw->next;
 	}
+
 }

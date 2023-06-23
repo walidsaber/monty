@@ -14,7 +14,7 @@
  * @next: points to the next element of the stack (or queue)
  *
  * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO
+ * for stack, queues, LIFO, FIFO Holberton project
  */
 typedef struct stack_s
 {
@@ -23,19 +23,19 @@ typedef struct stack_s
 	struct stack_s *next;
 } stack_t;
 /**
- * struct bus_s - vars 
- * @arg: arg vals
- * @file: file
- * @content: context
- * @lifi: int
+ * struct bus_s - variables -args, file, line content
+ * @arg: value
+ * @file: pointer to monty file
+ * @content: line content
+ * @lifi: flag change stack <-> queue
+ * Description: carries values through the program
  */
 typedef struct bus_s
 {
-	FILE *file;
-	int lifi;
 	char *arg;
-
+	FILE *file;
 	char *content;
+	int lifi;
 }  bus_t;
 extern bus_t bus;
 /**
